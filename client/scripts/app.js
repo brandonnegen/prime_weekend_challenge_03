@@ -2,18 +2,14 @@ $(document).ready(function(){
     $.ajax({
         url: "/data",//calls server app.js and asks for JSON file
         success: function(data){
-            console.log(data);
-            console.log(data.person1.name);
             $.each(data, function(){
-                $('.whole-cohort').append("<div class='each-student'></div>");
+                $('.whole-cohort').append("<div class='each-student'></div>");//appends all 22 students to the DOM
                 var eachStudent = $('.whole-cohort').children().last();
                 eachStudent.append("<h1 class='name'>" + this.name + "</h1>");
                 eachStudent.append("<p class='description'>" + this.desc + "</p>");
                 eachStudent.append("<p class='shout-out'>" + this.thanks + "</p>");
-                console.log(this.name);
-
             });
-            $('.each-student:first').addClass('show-student');
+            $('.each-student:first').addClass('show-student');//only shows "active" student
             $('.arrow-next').click(function(){
                 var currentSlide = $('.show-student');
                 var nextSlide = currentSlide.next();
