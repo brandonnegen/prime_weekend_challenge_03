@@ -34,3 +34,25 @@
     text-align: center;
     margin-top: 20px;
 }
+    /*styles the appended student divs to not show until it is active*/
+.each-student {
+    display: none;
+}
+.show-student {
+    display: block;
+}
+    /*styles the main containing div*/
+.slider {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    border-bottom: 1px solid #ddd;
+}
+.slide {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
