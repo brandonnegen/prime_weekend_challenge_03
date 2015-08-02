@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-        url: "/data",//calls server app.js and asks for JSON file
+        url: "/data",//calls server app.js and asks for people.json data file that resides in the "/data" folder
         success: function(data){
             $.each(data, function(){
                 $('.whole-cohort').append("<div class='each-student'></div>");//appends all 22 students to the DOM one student per div, there is a css class each-student that automatically turns all students to display none
