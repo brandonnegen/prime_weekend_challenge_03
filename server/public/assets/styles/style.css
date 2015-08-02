@@ -32,7 +32,7 @@
     /*styles for the div that holds the dots and arrows*/
 .slider-nav {
     text-align: center;
-    margin-top: 20px;
+    background-color: #DAE5E3;
 }
     /*styles the appended student divs to not show until it is active*/
 .each-student {
@@ -51,9 +51,10 @@
     /*styles the main containing div*/
 .slider {
     position: relative;
-    width: 100%;
-    height: 470px;
-    border-bottom: 1px solid #ddd;
+    width: 80%;
+    height: 532px;
+    border-bottom: 1px solid #000000;
+    background-color: #DAE5E3;
 }
 h1 {
     text-align: center;
@@ -74,4 +75,14 @@ p {
 }
 .shout-out {
     text-align: center;
+}
+body {
+    background-color: #07AA9E;
+}
+header {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Interstate Light", sans-serif;
+    height: 100px;
+    padding-top: 10px;
 }
